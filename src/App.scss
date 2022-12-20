@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    /* Typography */
+    --regular-font: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+
+    --heading-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        monospace, sans-serif;
+
+    /* h5 font size paragraph */
+    /* start of for small mobile  (576px and down) */
+    /* start of for mobile  (576px and up) */
+
+    /* start of for mobile */
+
+    --font-size-h1: 2.488rem;
+
+    --font-size-h2: 2.074rem;
+
+    --font-size-h3: 1.728rem;
+
+    --font-size-h4: 1.44rem;
+
+    --font-size-h5: 1.2rem;
+
+    /* major third 1.200 */
+    /* end of for mobile */
+
+    --font-size-h6: 1rem;
+
+    --box-shadow-1: 1px 2px 2px #000, -1px -2px 2px #000;
+    --box-shadow-2: 2px 4px 6px #000;
+
+    --transition-8: all 0.8s ease-in-out;
+    /* colors */
+    --primary-color: #b8860b;
+    --secondary-color: #61baad;
+    --heading-color: #4b8178;
+    --background-color: #c3fcf2;
+    --btn-color: #60bf26;
+
+    --gradient: linear-gradient(220.55deg, #ffd439 0%, #ff7a00 100%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--regular-font);
+    font-size: 100%;
+    background: var(--gradient) no-repeat center/cover;
+    min-height: 100vh;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* mobile */
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+}
+
+p {
+    font-size: var(--font-size-h5);
+}
+
+
+
+// main Style
+
+
+
+
+.heading{
+    padding-top: 2rem;
+}
+
+
+.heading__text{
+    font-size: var(--font-size-h2);
+    text-transform: capitalize;
+    // padding-left: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.total{
+    color: var(--heading-color);
+    font-weight: bold;
+    text-shadow: 1px 2px 1px rgb(255, 255, 255);
+}
+
+
+.friend__image{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.friend__list__container{
+    padding-top: 1rem;
+    font-size: var(--font-size-h4);
+}
+
+.friend__list__main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+justify-content: center;
+margin: 0 auto;
+width: 92vw;
+align-items: center;
+gap: 1rem;
+}
+
+.friend__list {
+    display: flex;
+    gap: 2rem;
+    box-shadow: var(--box-shadow-1);
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+
+.friend__text{
+    align-self: center;
+}
+
+.friend__name{
+    font-size: var(--font-size-h4);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--primary-color) ;
+    font-weight: bold;
+
+}
+
+.friend__age{
+    color: var(--secondary-color) ;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: var(--font-size-h5);
+}
+
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: .5rem 1.5rem;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow-1);
+    font-size: var(--font-size-h4);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--heading-color);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    transition: var(--transition-8);
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+.btn:hover{
+    opacity: 1;
+    background-color: black;
+    color: var(--primary-color);
+    transform: translateY(5px);
+}
